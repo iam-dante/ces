@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" /> -->
+
+    <!-- tailwindcss elements -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <link href="../dist/tailwindcss.css" rel="stylesheet" />
+    <title>CES | User Profile</title>
+    <link rel="icon" type="image/x-icon" href="../images/softnet-image.png" />
+  </head>
+  <body>
+    <div class="min-h-full">
+      <div
+        id="sidebar"
+        class="fixed inset-0 z-40 flex hidden"
+        role="dialog"
+        aria-modal="true"
+      >
+        <div
+          class="fixed inset-0 bg-gray-600 bg-opacity-75"
+          aria-hidden="true"
+        ></div>
+
+        <div
+          class="relative flex w-full max-w-xs flex-1 flex-col bg-cesblue-700 pt-5 pb-4"
+        >
+          <div class="absolute top-0 right-0 -mr-12 pt-2">
+            <button
+              id="close_sidebar"
+              type="button"
+              class="ml-1 flex h-10 w-10 items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            >
+              <span class="sr-only">Close sidebar</span>
+              <!-- Heroicon name: outline/x -->
+              <svg
+                class="h-6 w-6 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <section include="navigation.html"></section>
+        </div>
+      </div>
+
+      <!-- Static sidebar for desktop -->
+      <div
+        class="hidden lg:fixed lg:inset-y-0 lg:flex lg:min-h-screen lg:w-64 lg:flex-col"
+      >
+        <div
+          class="flex min-h-screen w-full flex-col justify-center overflow-y-auto pt-5 pb-4"
+        >
+          <div
+            class="flex w-full flex-row items-center justify-center space-x-3 py-6 px-4"
+          >
+            <image src="../images/softnet-image.png" class="h-14" />
+            <!-- <h class="text-2xl font-bold tracking-widest text-white">CES</h> -->
+          </div>
+
+          <div class="min-h-[60%] w-full bg-black">
+            <section include="navigation.html"></section>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-1 flex-col lg:pl-64">
+        <main class="relative min-h-screen flex-1 pb-8">
+          <!-- Header -->
+          <section include="header.html"></section>
+
+          <!-- Main Content -->
+          <div class="px-6 py-2">
+            <div
+              class="flex w-full flex-row items-center border-b-2 border-black py-2 px-2"
+            >
+              <div class="flex flex-row items-center space-x-2">
+                <span class="rounded-full bg-sky-100 px-3 py-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-7 w-7"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </span>
+
+                <h class="text-xl font-semibold uppercase">user Profile</h>
+
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#newPassword"
+                  class="absolute right-10 rounded-sm border border-cesgreen-900 bg-transparent py-2 px-4 font-semibold uppercase text-cesgreen-700 hover:border-transparent hover:bg-cesgreen-900 hover:text-white"
+                >
+                  Change password
+                </button>
+              </div>
+            </div>
+            <div class="flex h-full w-full justify-center">
+              <div
+                class="mt-12 flex w-[65%] flex-col rounded-sm bg-slate-50 px-6 py-12 border border-dashed border-black"
+              >
+                <div class="flex w-full flex-row items-center justify-center">
+                  <div class="flex h-12 w-48 items-center justify-end px-4">
+                    <label class="font-medium uppercase">Full Name:</label>
+                  </div>
+
+                  <input
+                    class="mt-1 h-10 w-full rounded-sm border border-slate-400 bg-white px-4 focus:outline-cesblue-700"
+                  />
+                </div>
+
+                <div class="flex w-full flex-row items-center justify-center">
+                  <div class="flex h-12 w-48 items-center justify-end px-4">
+                    <label class="font-medium uppercase">Email:</label>
+                  </div>
+
+                  <input
+                    class="mt-1 h-10 w-full rounded-sm border border-slate-400 bg-white px-4 focus:outline-cesblue-700"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <section include="footer.html"></section>
+        </main>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      elect+User+type
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="../js/section.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn3.devexpress.com/jslib/21.2.7/css/dx.light.css"
+    />
+
+    <!-- DevExtreme library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/22.1.3/js/dx.all.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+    ></script>
+
+    <!-- <script
+      src="../js/buttonControls.js"
+      type="text/javascript"
+      charset="utf8"
+    ></script> -->
+
+    <!-- Add schedule modal -->
+    <div
+      class="modal fade fixed top-0 left-0 hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+      id="newPassword"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md pointer-events-none relative w-auto">
+        <div
+          class="modal-content pointer-events-auto relative flex w-full flex-col rounded-sm border-none bg-white bg-clip-padding text-current shadow-lg outline-none"
+        >
+          <div
+            class="modal-header flex flex-shrink-0 items-center justify-between rounded-t-md border-b border-gray-200 p-4"
+          >
+            <h5
+              class="text-xl font-medium uppercase leading-normal text-gray-800"
+              id="exampleModalLabel"
+            >
+              Change Password
+            </h5>
+            <button
+              type="button"
+              class="btn-close box-content h-4 w-4 rounded-none border-none p-1 text-black opacity-50 hover:text-black hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body relative p-4">
+            <form>
+              <div class="flex flex-col space-y-4 py-4 px-6">
+                <label class="block w-full">
+                  <span class="required block text-base font-light">
+                    <span class="font-medium">Current Password</span>
+                  </span>
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full rounded-sm border border-slate-400 px-4 focus:outline-cesblue-700"
+                    placeholder="Current Password"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="required block text-base font-light">
+                    <span class="font-medium">New Password</span>
+                  </span>
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full rounded-sm border border-slate-400 px-4 focus:outline-cesblue-700"
+                    placeholder="Current Password"
+                  />
+                </label>
+
+                <label class="block w-full">
+                  <span class="required block text-base font-light">
+                    <span class="font-medium">Confirm Password</span>
+                  </span>
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full rounded-sm border border-slate-400 px-4 focus:outline-cesblue-700"
+                    placeholder="Cofirm Password"
+                  />
+                </label>
+              </div>
+            </form>
+          </div>
+
+          <div
+            class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end space-x-3 rounded-b-md border-t border-gray-200 p-4 px-4"
+          >
+            <div class="flex space-x-2">
+              <button
+                type="button"
+                class="rounded-sm bg-cesgreen-300 px-5 py-2.5 text-sm font-medium text-cesgreen-900 hover:bg-cesgreen-800 hover:text-white"
+              >
+                Submit
+              </button>
+
+              <button
+                type="button"
+                data-bs-dismiss="modal"
+                class="rounded-sm bg-red-300 px-5 py-2.5 text-sm font-medium text-red-900 hover:bg-red-800 hover:text-white"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal-tailwindcss cnd script -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  </body>
+</html>
