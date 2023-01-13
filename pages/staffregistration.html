@@ -89,12 +89,14 @@
           <!-- Main Content -->
           <div class="px-6 py-2">
             <div
-              class="flex w-full flex-row items-center border-b-2 border-black py-4 md:py-2 px-2"
+              class="flex w-full flex-row items-center border-b-2 border-black py-4 px-2 md:py-2"
             >
               <div class="flex flex-row items-center space-x-2">
-                <span class="rounded-full  px-3 py-3 border border-black hidden md:block">
+                <span
+                  class="hidden rounded-full border border-black px-3 py-3 md:block"
+                >
                   <svg
-                    class="h-7 w-7 "
+                    class="h-7 w-7"
                     viewBox="0 0 31 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +131,9 @@
                   </svg>
                 </span>
 
-                <h class="text-md md:text-xl font-semibold uppercase">Staff Management</h>
+                <h class="text-md font-semibold uppercase md:text-xl"
+                  >Staff Management</h
+                >
 
                 <!-- data-modal-toggle="newStaff" -->
                 <button
@@ -362,15 +366,14 @@
           </div>
           <div class="modal-body relative p-4">
             <form>
-              <div class="grid grid-rows md:grid-cols-3 gap-2 py-4 px-6">
+              <div class="grid-rows grid gap-2 py-4 px-6 md:grid-cols-3">
                 <label class="block w-full">
                   <span class="required block text-base font-light">
                     <span class="font-medium">First Name </span>
-                    </span
-                  >
+                  </span>
                   <input
                     type="text"
-                    class="focus:outline-cesblue-700 mt-1 h-10 w-full rounded-sm border border-slate-400 px-4"
+                    class="mt-1 h-10 w-full rounded-sm border border-slate-400 px-4 focus:outline-cesblue-700"
                     placeholder="First Name"
                   />
                 </label>
@@ -378,11 +381,10 @@
                 <label class="block w-full">
                   <span class="required block text-base font-light">
                     <span class="font-medium">Middle Name </span>
-                    </span
-                  >
+                  </span>
                   <input
                     type="text"
-                    class="focus:outline-cesblue-700 mt-1 h-10 w-full rounded-sm border border-slate-400 px-4"
+                    class="mt-1 h-10 w-full rounded-sm border border-slate-400 px-4 focus:outline-cesblue-700"
                     placeholder="First Name"
                   />
                 </label>
@@ -390,38 +392,42 @@
                 <label class="block w-full">
                   <span class="required block text-base font-light">
                     <span class="font-medium">Last Name </span>
-                    </span
-                  >
+                  </span>
                   <input
                     type="text"
-                    class="focus:outline-cesblue-700 mt-1 h-10 w-full rounded-sm border border-slate-400 px-4"
+                    class="mt-1 h-10 w-full rounded-sm border border-slate-400 px-4 focus:outline-cesblue-700"
                     placeholder="Last Name"
                   />
                 </label>
-
-                 <label class="block w-full">
+                <label class="block w-full">
+                  <span class="required block text-base font-light">
+                    <span class="font-medium">Phone Number</span>
+                  </span>
+                  <input
+                    type="text"
+                    class="mt-1 h-10 w-full rounded-sm border border-slate-400 px-4 focus:outline-cesblue-700"
+                    placeholder="Phone Number"
+                  />
+                </label>
+                <label class="block w-full">
                   <span class="required block text-base font-light">
                     <span class="font-medium">Email </span>
-                    </span
-                  >
+                  </span>
                   <input
                     type="text"
-                    class="focus:outline-cesblue-700 mt-1 h-10 w-full rounded-sm border border-slate-400 px-4"
+                    class="mt-1 h-10 w-full rounded-sm border border-slate-400 px-4 focus:outline-cesblue-700"
                     placeholder="Last Name"
                   />
                 </label>
-                 <label class="block w-full">
+                <label class="block w-full">
                   <span class="required block text-base font-light">
                     <span class="font-medium">Department </span>
-                    </span
-                  >
+                  </span>
                   <select
                     type="text"
-                    class="focus:outline-cesblue-700 bg-white mt-1 h-10 w-full rounded-sm border border-slate-400 px-4"
+                    class="mt-1 h-10 w-full rounded-sm border border-slate-400 bg-white px-4 focus:outline-cesblue-700"
                     placeholder="Last Name"
-                  >
-                    
-                </select>
+                  ></select>
                 </label>
               </div>
             </form>
