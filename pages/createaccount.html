@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create Account| CES</title>
     <link rel="icon" type="image/x-icon" href="../images/softnet-image.png" />
     <link href="../dist/tailwindcss.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width; initial-scale=1" />
   </head>
   <body>
     <main class="flex h-screen items-center justify-center">
@@ -90,13 +90,13 @@
                     </div>
                   </label>
 
-                  <div class="flex flex-col space-y-2 w-full">
+                  <div class="flex w-full flex-col space-y-2">
                     <h1 class="uppercase">Company Logo</h1>
-                      <input
-                        type="file"
-                        id="fileInput"
-                        class="file:text-crvsblue-700 block w-full text-slate-800 file:mr-4 file:cursor-pointer file:rounded-sm file:border-0 file:bg-sky-100 file:py-2 file:px-4 file:text-base file:font-semibold hover:file:bg-sky-700 hover:file:text-white"
-                      />
+                    <input
+                      type="file"
+                      id="fileInput"
+                      class="file:text-crvsblue-700 block w-full text-slate-800 file:mr-4 file:cursor-pointer file:rounded-sm file:border-0 file:bg-sky-100 file:py-2 file:px-4 file:text-base file:font-semibold hover:file:bg-sky-700 hover:file:text-white"
+                    />
                   </div>
 
                   <a
@@ -121,6 +121,16 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 
+    <script>
+      // document
+      //   .querySelector("meta[name=viewport]")
+      //   .setAttribute(
+      //     "content",
+      //     "width=device-width, initial-scale=" + 1 / window.devicePixelRatio
+      //   );
+
+      console.log(window.devicePixelRatio)
+    </script>
     <script>
       document.getElementById(
         "svgIcon"

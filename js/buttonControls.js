@@ -1,17 +1,25 @@
 $(document).ready(function () {
- $("#open_sidebar").click(() => {
-   $("#sidebar").removeClass("hidden");
-   $("#sidebar").addClass("block");
- });
+  document
+    .querySelector("meta[name=viewport]")
+    .setAttribute(
+      "content",
+      "width=device-width, initial-scale=" + 1 / window.devicePixelRatio
+    );
 
- $("#close_sidebar").click(() => {
-   $("#sidebar").addClass("hidden");
-   $("#sidebar").removeClass("block");
- });
+    console.log("This is " + window.devicePixelRatio);
+  $("#open_sidebar").click(() => {
+    $("#sidebar").removeClass("hidden");
+    $("#sidebar").addClass("block");
+  });
+
+  $("#close_sidebar").click(() => {
+    $("#sidebar").addClass("hidden");
+    $("#sidebar").removeClass("block");
+  });
   // Marriage
   $("#brideNext").click(() => {
     document.getElementById("mainpage").scrollIntoView();
-    
+
     $("#brideId").addClass("stepper-active");
     $("#groomId").removeClass("stepper-active");
 
@@ -24,7 +32,7 @@ $(document).ready(function () {
 
   $("#prevGroom").click(() => {
     document.getElementById("mainpage").scrollIntoView();
-   
+
     $("#groomId").addClass("stepper-active");
     $("#brideId").removeClass("stepper-active");
 
@@ -32,54 +40,45 @@ $(document).ready(function () {
 
     $("#groomDiv").attr("style", "display: block");
     $("#brideDiv ").attr("style", "display: none");
-    
   });
 
+  $("#prevBride").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
 
-   $("#prevBride").click(() => {
-     document.getElementById("mainpage").scrollIntoView();
+    $("#brideId").addClass("stepper-active");
+    $("#witId").removeClass("stepper-active");
 
-     $("#brideId").addClass("stepper-active");
-     $("#witId").removeClass("stepper-active");
+    $(".heightstepper").attr("style", "height: 1600px");
 
-     $(".heightstepper").attr("style", "height: 1600px");
+    $("#brideDiv").attr("style", "display: block");
+    $("#witDiv ").attr("style", "display: none");
+  });
 
-     $("#brideDiv").attr("style", "display: block");
-     $("#witDiv ").attr("style", "display: none");
-     
-   });
+  $("#witNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
 
-   $("#witNext").click(() => {
-     document.getElementById("mainpage").scrollIntoView();
+    $("#witId").addClass("stepper-active");
+    $("#brideId").removeClass("stepper-active");
 
-     $("#witId").addClass("stepper-active");
-     $("#brideId").removeClass("stepper-active");
+    $(".heightstepper").attr("style", "height: 400px");
 
-     $(".heightstepper").attr("style", "height: 400px");
+    $("#witDiv").attr("style", "display: block");
+    $("#brideDiv").attr("style", "display: none");
+    $("#brideId").addClass("stepper-completed");
+  });
 
-     $("#witDiv").attr("style", "display: block");
-     $("#brideDiv").attr("style", "display: none");
-     $("#brideId").addClass("stepper-completed");
-   });
+  $("#attmarrNext").click(() => {
+    document.getElementById("mainpage").scrollIntoView();
 
- 
-   $("#attmarrNext").click(() => {
-     document.getElementById("mainpage").scrollIntoView();
+    $("#attmarrId").addClass("stepper-active");
+    $("#witId").removeClass("stepper-active");
 
-     $("#attmarrId").addClass("stepper-active");
-     $("#witId").removeClass("stepper-active");
+    $(".heightstepper").attr("style", "height: 400px");
 
-     $(".heightstepper").attr("style", "height: 400px");
-
-     $("#attmarrDiv").attr("style", "display: block");
-     $("#witDiv").attr("style", "display: none");
-     $("#witId").addClass("stepper-completed");
-   });
-
- 
- 
-
-
+    $("#attmarrDiv").attr("style", "display: block");
+    $("#witDiv").attr("style", "display: none");
+    $("#witId").addClass("stepper-completed");
+  });
 
   const input = document.getElementById("fileInput");
 
