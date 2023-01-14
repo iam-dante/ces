@@ -7,6 +7,14 @@
     <link rel="icon" type="image/x-icon" href="../images/softnet-image.png" />
     <link href="../dist/tailwindcss.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width; initial-scale=1" />
+
+    <style>
+      @media (-webkit-device-pixel-ratio: 2) {
+        * {
+          zoom: 96%;
+        }
+      }
+    </style>
   </head>
   <body>
     <main class="flex h-screen items-center justify-center">
@@ -129,7 +137,7 @@
       //     "width=device-width, initial-scale=" + 1 / window.devicePixelRatio
       //   );
 
-      console.log(window.devicePixelRatio)
+      console.log(window.devicePixelRatio);
     </script>
     <script>
       document.getElementById(
