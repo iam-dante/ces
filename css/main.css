@@ -9,8 +9,9 @@
   color: red;
 }
 
-@media (-webkit-device-pixel-ratio: 2) {
+/* @media (-webkit-device-pixel-ratio: 2) {
   * {
     zoom: 97%;
   }
-}
+} */
+

@@ -1427,11 +1427,11 @@ video {
   color: red;
 }
 
-@media (-webkit-device-pixel-ratio: 2) {
+/* @media (-webkit-device-pixel-ratio: 2) {
   * {
     zoom: 97%;
   }
-}
+} */
 
 .file\:mr-4::file-selector-button{
   margin-right: 1rem;
@@ -1797,3 +1797,4 @@ video {
     padding-right: 7rem;
   }
 }
+
