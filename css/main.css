@@ -13,6 +13,9 @@
   @apply font-semibold font-robot uppercase  text-black 
 }
 
+.dx-icon-trash {
+  @apply text-red-600  !important;
+}
 /* @media (-webkit-device-pixel-ratio: 2) {
   * {
     zoom: 98%;
