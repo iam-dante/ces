@@ -89,10 +89,12 @@
           <!-- Main Content -->
           <div class="px-6 py-2">
             <div
-              class="flex w-full flex-row items-center border-b-2 border-black py-4 md:py-2px-2"
+              class="md:py-2px-2 flex w-full flex-row items-center border-b-2 border-black py-4"
             >
               <div class="flex flex-row items-center space-x-2">
-                <span class="rounded-full  border border-black px-3 py-3 hidden md:block">
+                <span
+                  class="hidden rounded-full border border-black px-3 py-3 md:block"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -109,7 +111,7 @@
                   </svg>
                 </span>
 
-                <h class="text-md md:text-xl font-semibold uppercase"
+                <h class="text-md font-semibold uppercase md:text-xl"
                   >Products Management</h
                 >
 
@@ -400,7 +402,7 @@
     </div>
 
     <!-- Add Product File -->
-    <div
+    <!-- <div
       class="modal fade fixed top-0 left-0 hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
       id="newProductsFile"
       tabindex="-1"
@@ -456,6 +458,61 @@
               class="rounded-sm bg-red-300 px-5 py-2.5 text-sm font-medium text-red-900 hover:bg-red-800 hover:text-white"
             >
               Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div
+      class="modal fade fixed top-0 left-0 hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+      id="cancelSchedule"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md pointer-events-none relative w-auto">
+        <div
+          class="modal-content pointer-events-auto relative flex w-full flex-col rounded-sm border-none bg-white bg-clip-padding text-current shadow-lg outline-none"
+        >
+          <div
+            class="modal-header flex flex-shrink-0 items-center justify-between rounded-t-md border-b border-gray-200 p-4"
+          >
+            <h5
+              class="text-xl font-medium uppercase leading-normal text-gray-800"
+              id="exampleModalLabel"
+            >
+              Cancel Schedule
+            </h5>
+            <button
+              type="button"
+              class="btn-close box-content h-4 w-4 rounded-none border-none p-1 text-black opacity-50 hover:text-black hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body relative p-4">
+            <h
+              >Do you wanna cancel this schedule of
+              <h class="font-bold uppercase"> Tigo </h> ?</h
+            >
+          </div>
+          <div
+            class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end space-x-3 rounded-b-md border-t border-gray-200 p-4 px-4"
+          >
+            <button
+              type="button"
+              class="rounded-sm bg-cesgreen-300 px-5 py-2.5 text-sm font-medium text-cesgreen-900 hover:bg-cesgreen-800 hover:text-white"
+            >
+              Cancel
+            </button>
+
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              class="rounded-sm bg-red-300 px-5 py-2.5 text-sm font-medium text-red-900 hover:bg-red-800 hover:text-white"
+            >
+              Close
             </button>
           </div>
         </div>
