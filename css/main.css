@@ -9,6 +9,10 @@
   color: red;
 }
 
+.dx-datagrid-text-content{
+  @apply font-semibold font-robot uppercase  text-black 
+}
+
 /* @media (-webkit-device-pixel-ratio: 2) {
   * {
     zoom: 98%;

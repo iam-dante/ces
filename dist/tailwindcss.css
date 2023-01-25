@@ -1495,6 +1495,14 @@ video {
   color: red;
 }
 
+.dx-datagrid-text-content{
+  font-family: Roboto Mono, monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 /* @media (-webkit-device-pixel-ratio: 2) {
   * {
     zoom: 98%;
