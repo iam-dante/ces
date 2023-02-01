@@ -1,5 +1,5 @@
-<div class="border-b border-gray-400">
-  <div class="flex h-20 items-center justify-center ">
+<div class="">
+  <div class="flex h-20 items-center justify-center">
     <div class="absolute left-2">
       <button
         id="open_sidebar"
@@ -33,11 +33,12 @@
       >
     </div>
 
-    <div class="absolute right-6 block ">
+    <div class="absolute right-6 block">
       <button
         type="button"
-        class="flex items-center  rounded-full bg-white text-sm focus:outline-none  focus:ring-white focus:ring-offset-2 lg:rounded-md lg:p-2"
-        id="dropdownDefault"s
+        class="bg-gray-200 flex items-center rounded-full text-sm focus:outline-none focus:ring-white focus:ring-offset-2 lg:rounded-md lg:p-2"
+        id="dropdownDefault"
+        s
         aria-expanded="false"
         aria-haspopup="true"
         data-dropdown-toggle="dropdown"
@@ -45,7 +46,7 @@
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-gray-700"
+            class="h-6 w-6 text-black"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -58,13 +59,13 @@
             />
           </svg>
         </div>
-        <span class="ml-2  hidden lg:block"
+        <span class="ml-2 hidden lg:block"
           ><span class="sr-only">Open user menu for </span>
-          <h1 class="text-base font-bold text-gray-700">Admin Name</h1>
+          <h1 class="text-base font-bold ">Admin Name</h1>
         </span>
         <!-- Heroicon name: solid/chevron-down -->
         <svg
-          class="ml-1 hidden h-5 w-5 flex-shrink-0 text-gray-700 lg:block "
+          class="ml-1 hidden h-5 w-5 flex-shrink-0 text-gray-700 lg:block"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
@@ -80,19 +81,18 @@
 
       <div
         id="dropdown"
-        class="absolute rounded-sm border-1  border-slate-900 bg-black z-10 hidden min-w-full py-2 px-2 text-gray-700 drop-shadow-xl"
+        class="border-1 absolute z-10 hidden min-w-full rounded-sm border-slate-900 bg-black py-2 px-2 text-gray-700 drop-shadow-xl"
         aria-labelledby="dropdownDefault"
       >
         <div class="divide-y-1 divide-black">
           <div class="">
             <a
               href="../pages/userprofile.html"
-              class="group flex flex-row items-center space-x-2 rounded-sm px-2 py-1.5 font-medium hover:bg-sky-700 text-white"
+              class="group flex flex-row items-center space-x-2 rounded-sm px-2 py-1.5 font-medium text-white hover:bg-sky-700"
             >
-           
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 "
+                class="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -104,20 +104,18 @@
                   d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-            
+
               <h class="font-bold">Profile</h></a
             >
           </div>
           <div class="py-1">
             <a
               href="../index.html"
-              class="group flex flex-row items-center space-x-2 rounded-sm px-2 py-1.5 font-medium hover:bg-red-600 text-white"
+              class="group flex flex-row items-center space-x-2 rounded-sm px-2 py-1.5 font-medium text-white hover:bg-red-600"
             >
-            
-
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 "
+                class="h-5 w-5"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -127,7 +125,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-            
+
               <h class="font-bold">Logout</h></a
             >
           </div>
