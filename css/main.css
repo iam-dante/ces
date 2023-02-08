@@ -22,3 +22,11 @@
   }
 } */
 
+.dx-icon-clear {
+  @apply text-red-600  !important;
+}
+
+.dx-icon-undo {
+  @apply text-green-600  !important;
+}
+

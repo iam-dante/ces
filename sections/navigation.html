@@ -325,19 +325,19 @@
 
   <script>
     $(document).ready(function () {
-      const All_Details = document.querySelectorAll("details");
+      // const All_Details = document.querySelectorAll("details");
 
-      All_Details.forEach((dt) => {
-        dt.addEventListener("toggle", toggleOpenOneOnly);
-      });
+      // All_Details.forEach((dt) => {
+      //   dt.addEventListener("toggle", toggleOpenOneOnly);
+      // });
 
-      function toggleOpenOneOnly(e) {
-        if (this.open) {
-          All_Details.forEach((deet) => {
-            if (deet != this && deet.open) deet.open = false;
-          });
-        }
-      }
+      // function toggleOpenOneOnly(e) {
+      //   if (this.open) {
+      //     All_Details.forEach((deet) => {
+      //       if (deet != this && deet.open) deet.open = false;
+      //     });
+      //   }
+      // }
 
       function sectionDetails(cls) {
         var details = document.getElementsByClassName(cls);
