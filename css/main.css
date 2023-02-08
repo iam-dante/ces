@@ -14,7 +14,7 @@
 }
 
 .dx-icon-trash {
-  @apply text-red-600  !important;
+  @apply text-red-600 cursor-pointer !important;
 }
 /* @media (-webkit-device-pixel-ratio: 2) {
   * {
@@ -23,10 +23,10 @@
 } */
 
 .dx-icon-clear {
-  @apply text-red-600  !important;
+  @apply text-red-600 cursor-pointer  !important;
 }
 
 .dx-icon-undo {
-  @apply text-green-600  !important;
+  @apply text-green-600 cursor-pointer  !important;
 }
 
