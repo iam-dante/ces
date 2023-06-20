@@ -213,54 +213,69 @@
                 </div>
               </div> -->
 
-
               <div class="p-4 mt-4">
-                  <div class="grid grid-cols-2 gap-4">
-                    <div class="  space-y-2 p-2 border border-slate-500">
-                      <h1 class="uppercase text-sm font-bold">Last Week</h1>
-                      <div class="grid grid-cols-2 gap-4">
-                          <div class="h-24  p-2 space-y-2 bg-green-100">
-                            <h1 class="uppercase text-lg font-medium">visited</h1>
-                            <h1 class="uppercase text-2xl font-bold text-green-800">59</h1>
-                          </div>
-                          <div class="h-24 bg-red-100 p-2 space-y-4">
-                            <h1 class="uppercase text-lg  font-medium">not visited</h1>
-                            <h1 class="uppercase text-2xl font-bold text-red-800">60</h1>
-                          </div>
+                <div class="grid md:grid-cols-3 gap-4">
+                  <div class="space-y-2 p-2 border border-slate-500">
+                    <h1 class="uppercase text-sm font-bold">Last Week</h1>
+                    <div class="grid grid-cols-2 gap-4">
+                      <div class="p-2 space-y-2 bg-green-100">
+                        <h1 class="uppercase  font-medium">visited</h1>
+                        <h1 class="uppercase text-2xl font-bold text-green-800">
+                          59
+                        </h1>
+                      </div>
+                      <div class="bg-red-100 p-2 space-y-2">
+                        <h1 class="uppercase text-ss font-medium">
+                          not visited
+                        </h1>
+                        <h1 class="uppercase text-2xl font-bold text-red-800">
+                          60
+                        </h1>
                       </div>
                     </div>
-                    
-
-                    <div class="  space-y-2 p-2 border border-slate-500">
-                      <h1 class="uppercase text-sm font-bold">yersterday</h1>
-                      <div class="grid grid-cols-2 gap-4">
-                          <div class="h-24  p-2 space-y-2 bg-green-100">
-                            <h1 class="uppercase text-lg font-medium">visited</h1>
-                            <h1 class="uppercase text-2xl font-bold text-green-800">59</h1>
-                          </div>
-                          <div class="h-24 bg-red-100 p-2 space-y-4">
-                            <h1 class="uppercase text-lg  font-medium">not visited</h1>
-                            <h1 class="uppercase text-2xl font-bold text-red-800">60</h1>
-                          </div>
-                      </div>
-                    </div>
-
                   </div>
+
+                  <div class="space-y-2 p-2 border border-slate-500">
+                    <h1 class="uppercase text-sm font-bold">yersterday</h1>
+                    <div class="grid grid-cols-2 gap-4">
+                      <div class="p-2 space-y-2 bg-green-100">
+                        <h1 class="uppercase  font-medium">visited</h1>
+                        <h1 class="uppercase text-2xl font-bold text-green-800">
+                          59
+                        </h1>
+                      </div>
+                      <div class="bg-red-100 p-2 space-y-2">
+                        <h1 class="uppercase  font-medium">
+                          not visited
+                        </h1>
+                        <h1 class="uppercase text-2xl font-bold text-red-800">
+                          60
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="space-y-2 p-2 border border-slate-500">
+                    <h1 class="uppercase text-sm font-bold">THIS WEEK</h1>
+                    <div class="gap-4">
+                      <div class="p-2 space-y-2 bg-green-100">
+                        <h1 class="uppercase font-medium">planned</h1>
+                        <h1 class="uppercase text-2xl font-bold text-green-800">
+                          59
+                        </h1>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="flex flex-col items-center justify-center py-12">
-                <h class="text-2xl font-bold uppercase underline">
-                  Total number of customer visited  monthly
-                </h
-                >
-                <canvas
-                  id="lineGraph"
-                  height="90"
-                  class="mt-6  py-4"
-                ></canvas>
+                <h class="md:text-2xl font-bold uppercase underline">
+                  Total number of customer visited monthly
+                </h>
+                <canvas id="lineGraph" height="120" class="mt-6 py-4"></canvas>
               </div>
-
-
             </div>
           </div>
 
@@ -315,7 +330,7 @@
 
     <script>
       // const labels = ["Male", "Female"];
-  
+
       // const data = {
       //   labels: labels,
       //   datasets: [
@@ -338,7 +353,7 @@
       //     },
       //   ],
       // };
-  
+
       // const marriageData = {
       //   labels: labels,
       //   datasets: [
@@ -350,7 +365,7 @@
       //     },
       //   ],
       // };
-  
+
       // const divorceData = {
       //   labels: labels,
       //   datasets: [
@@ -362,7 +377,7 @@
       //     },
       //   ],
       // };
-  
+
       // const adaptionData = {
       //   labels: labels,
       //   datasets: [
@@ -374,37 +389,37 @@
       //     },
       //   ],
       // };
-  
+
       // const birthConfig = {
       //   type: "doughnut",
       //   data: data,
       //   options: {},
       // };
-  
+
       // const deathConfig = {
       //   type: "doughnut",
       //   data: deathData,
       //   options: {},
       // };
-  
+
       // const marriageConfig = {
       //   type: "doughnut",
       //   data: marriageData,
       //   options: {},
       // };
-  
+
       // const divorceConfig = {
       //   type: "doughnut",
       //   data: divorceData,
       //   options: {},
       // };
-  
+
       // const adaptionConfig = {
       //   type: "doughnut",
       //   data: adaptionData,
       //   options: {},
       // };
-  
+
       // const birthChart = new Chart(
       //   document.getElementById("birthChart"),
       //   birthConfig
@@ -425,7 +440,7 @@
       //   document.getElementById("adaptionChart"),
       //   adaptionConfig
       // );
-  
+
       // Line Graph
       const _labels = [
         "January",
@@ -441,19 +456,19 @@
         "November",
         "December",
       ];
-  
+
       function getRandomNumbers() {
         // Create an empty array to store the random numbers
         const numbers = [];
-  
+
         // Generate 12 random numbers and add them to the array
         for (let i = 0; i < 12; i++) {
           numbers.push(Math.floor(Math.random() * (1000 - 100 + 1)) + 100);
         }
-  
+
         return numbers;
       }
-  
+
       const _data = {
         labels: _labels,
         datasets: [
@@ -479,7 +494,7 @@
           // },
         ],
       };
-  
+
       const _config = {
         type: "line",
         data: _data,
@@ -492,8 +507,11 @@
           },
         },
       };
-  
-      const lineGraph = new Chart(document.getElementById("lineGraph"), _config);
+
+      const lineGraph = new Chart(
+        document.getElementById("lineGraph"),
+        _config
+      );
     </script>
 
     <script>
