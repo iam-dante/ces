@@ -1,0 +1,64 @@
+  <div
+      class="modal fade fixed top-0 left-0 hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+      id="newSchedule"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl pointer-events-none relative w-auto">
+        <div
+          class="modal-content pointer-events-auto relative flex w-full flex-col rounded-sm border-none bg-white bg-clip-padding text-current shadow-lg outline-none"
+        >
+          <div
+            class="modal-header flex flex-shrink-0 items-center justify-between rounded-t-md border-b border-gray-200 p-4"
+          >
+            <h5
+              class="text-xl font-medium uppercase leading-normal text-gray-800"
+              id="exampleModalLabel"
+            >
+              Create a Schedule
+            </h5>
+            <button
+              type="button"
+              class="btn-close box-content h-6 w-6 flex items-center rounded-none border-none p-1 text-black hover:text-red-700  focus:outline-none"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 "
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body relative p-4">
+          
+          </div>
+
+          <div
+            class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end space-x-3 rounded-b-md border-t border-gray-200 p-4 px-4"
+          >
+            <div class="flex space-x-2">
+            
+
+              <button
+                type="button"
+                data-bs-dismiss="modal"
+                class="rounded-sm bg-red-300 px-5 py-2.5 text-sm font-medium text-red-900 hover:bg-red-800 hover:text-white"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
